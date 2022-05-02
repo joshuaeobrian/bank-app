@@ -1,6 +1,5 @@
 package com.jobrian.bankappbackend.controller;
 
-import com.jobrian.bankappbackend.model.CardInfo;
 import com.jobrian.bankappbackend.model.GeneralMessage;
 import com.jobrian.bankappbackend.service.CardInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
