@@ -1,0 +1,47 @@
+@import "../../variables";
+
+.card-info {
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color1;
+        .report-issue{
+            margin-left: auto!important;
+        }
+    }
+    .card-info-cards{
+        .card-info-card{
+            padding: 5px 2px;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid $color1;
+            &:last-child{
+                border-bottom: 1px solid $color1;
+            }
+            &__details{
+                padding-left: 5px;
+            }
+            &__mask-number{
+                font-size: .8rem;
+                color: darken($color4, 25%);
+            }
+            &__actions{
+                margin: auto 4px;
+                .form-check-input {
+                    background-image: url("data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27><circle r=%273%27 fill=%27%23666%27/></svg>") !important;
+                }
+                .form-check-input:checked {
+                    background-color: $color2 !important;
+                    border-color: $color2 !important;
+                    background-image: url("data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27><circle r=%273%27 fill=%27%23fff%27/></svg>") !important;
+                }
+
+                .form-check-input:focus {
+                    border-color: $color2 !important;
+                    outline: 0;
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+}
